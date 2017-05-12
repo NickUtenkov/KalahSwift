@@ -1,0 +1,104 @@
+// !$*UTF8*$!
+{
+	0164B03F1D895DEA00BAA488 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 01D431B81D9401D1001FE80F /* Kalah */;
+		activeTarget = 0164B0461D895DEB00BAA488 /* Kalah */;
+		codeSenseManager = 01D431DF1D9401D7001FE80F /* Code sense */;
+		executables = (
+			01D431B81D9401D1001FE80F /* Kalah */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					552,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 496239057;
+			PBXWorkspaceStateSaveDate = 496239057;
+		};
+		sourceControlManager = 01D431DE1D9401D7001FE80F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	0164B0461D895DEB00BAA488 /* Kalah */ = {
+		activeExec = 0;
+		executables = (
+			01D431B81D9401D1001FE80F /* Kalah */,
+		);
+	};
+	01AA756D1D8968EE00F28C2E /* Kalah-Bridging-Header.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1313, 668}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 213}";
+			sepNavWindowFrame = "{{15, 257}, {1372, 796}}";
+		};
+	};
+	01AA75851D896A7900F28C2E /* Kalah_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1313, 668}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 348}";
+			sepNavWindowFrame = "{{38, 236}, {1372, 796}}";
+		};
+	};
+	01D431B81D9401D1001FE80F /* Kalah */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Kalah;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	01D431DE1D9401D7001FE80F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	01D431DF1D9401D7001FE80F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
