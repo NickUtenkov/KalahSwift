@@ -128,7 +128,7 @@ final class KalahViewController: UIViewController
 		m_pKalahGame.startGame()
 	}
 
-	func notifyPrefsChanged(_ sender: AnyObject)
+	@objc func notifyPrefsChanged(_ sender: AnyObject)
 	{
 		boxTech.isHidden = !Utils.prefsGetBool("ShowTech")
 		boxTech2.isHidden = !Utils.prefsGetBool("ShowTech")
@@ -236,7 +236,7 @@ final class KalahViewController: UIViewController
 		self.forceUpdate()
 	}
 
-	func showTech()
+	@objc func showTech()
 	{
 		if m_bShowTimedTechLine
 		{
@@ -269,7 +269,7 @@ final class KalahViewController: UIViewController
 		self.performSelector(onMainThread:#selector(startTimer),with:nil,waitUntilDone:false)//will no updating if run on current thread
 	}
 
-	func startTimer()
+	@objc func startTimer()
 	{
 		m_Timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.showTech), userInfo: nil, repeats: true)
 	}
@@ -380,7 +380,7 @@ final class KalahViewController: UIViewController
 		strNS[5] = "Win".localized
 	}
 
-	func gameSaveState(_ sender: AnyObject)
+	@objc func gameSaveState(_ sender: AnyObject)
 	{
 		m_pKalahGame.saveState()
 	}

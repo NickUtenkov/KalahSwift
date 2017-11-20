@@ -24,10 +24,10 @@ extension String
 	{
 		let myString = self as NSString
 		let attrs = 
-			[NSFontAttributeName: pFont,
-			 NSForegroundColorAttributeName:clr
+			[NSAttributedStringKey.font: pFont,
+			 NSAttributedStringKey.foregroundColor:clr
 			]
-		let sz: CGSize = myString.size(attributes:attrs)
+		let sz: CGSize = myString.size(withAttributes:attrs)
 		let pt = CGPoint(x:(bounds.width - sz.width)/2,y:(bounds.height - sz.height)/2)
 		myString.draw(at: pt,withAttributes:attrs)
 	}
@@ -35,7 +35,7 @@ extension String
 	func cgSize(_ inSize:CGSize,_ fnt:UIFont) -> CGSize
 	{
 		let str = self as NSString
-		let attrs = [NSFontAttributeName:fnt]
+		let attrs = [NSAttributedStringKey.font:fnt]
 		let sz1 = str.boundingRect(
 			with:inSize,
 			options:[.usesFontLeading, .usesLineFragmentOrigin],
@@ -46,13 +46,14 @@ extension String
 
 	var length:Int
 	{
-		return self.characters.count
+		//return self.characters.count
+		return self.count
 	}
 
 	func lengthForWidth(_ inWidth:CGFloat,_ pFont:UIFont) -> Int
 	{//http://nsscreencast.com/episodes/209-cool-text-effects
 		let font = CTFontCreateWithName(pFont.fontName as CFString,pFont.pointSize, nil)
-		let attrs:[String:AnyObject] = [NSFontAttributeName:font]
+		let attrs:[String:AnyObject] = [NSAttributedStringKey.font.rawValue:font]
 		let attString = CFAttributedStringCreate(kCFAllocatorDefault,self as CFString,attrs as CFDictionary!)
 		
 		let path = CGMutablePath()

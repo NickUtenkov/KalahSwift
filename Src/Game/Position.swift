@@ -247,7 +247,7 @@ final class Position
 extension Position
 {
 	//used for Position not be NSObject
-	final class ArchiveHelper : NSObject,NSCoding
+	@objc(_TtCC5Kalah8Position13ArchiveHelper)final class ArchiveHelper : NSObject,NSCoding
 	{
 		var pos:Position
 
